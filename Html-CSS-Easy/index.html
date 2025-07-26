@@ -11,7 +11,8 @@
     <title> Task number one Easy Level </title>
 </head>
 
-<body>
+<body style="margin: 0%; padding: 0%; background-color: antiquewhite;">
+
     <h1> Task number one Easy Level </h1>
     <p> hello saeed how u doin
         <br>---------------------------
@@ -20,33 +21,50 @@
     <!-- Task 2: Image and Hyperlink -->
 
 
-    <p>
-        image with a hyper link
-        <a href="https://www.pexels.com/search/beautiful/">
-            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
-                alt="Image with a Hyperlink" width="300" height="200">
-        </a>
-        <br>---------------------------
-    </p>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image with a Hyperlink</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://www.pexels.com/search/beautiful/">
+                            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg"
+                                alt="Image with a Hyperlink" width="300" height="200">
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <span>---------------------------</span>
 
     <!-- Task 3: unordered and ordered list  -->
-    <p>
-    <ul>
-        <li> Coffe </li>
-        <li> Tea </li>
-        <li> Water </li>
-    </ul>
+    <div>
+        <ul>
+            <li> Coffe </li>
+            <li> Tea </li>
+            <li> Water </li>
+        </ul>
 
-    <ol>
-        <li> Cofee </li>
-        <li> Tea </li>
-        <li> Water </li>
-    </ol>
-    </p>
+        <ol>
+            <li> Cofee </li>
+            <li> Tea </li>
+            <li> Water </li>
+        </ol>
+            <span>---------------------------</span>
+            
 
-    <br>----------------------------
+    </div>
+
+
     <!-- Task 4: basic text formatting tags -->
-    <p>
+<br>
+    <div>
         <b>Hello saeed</b>
         <br>
         <i> How are you </i>
@@ -60,47 +78,49 @@
         <Strong> habibi </Strong>
         <br>
         ------------------------------
-    </p>
+    </div>
 
     <!-- Task 5: Forms -->
-    <p>
+    <div>
+
         choose your favourite web language
-    <form>
-        <input type="checkbox" id="html" name="Favourite_language" value="HTML">
-        <label for="Test">html</label>
-        <br>
-        <input type="radio" id="css" name="Favourite_language" value="CSS">
-        <label for="css">CSS</label>
-        <br>
-        <input type="radio" id="js" name="Favourite_language" value="JavaScript">
-        <label for="js"> JavaScript </label>
-        <br>
-        -----------------------------
-        <br>
-        <label for="Yazan"> review about mafateeh company </label>
-        <br>
-        <br>
-        <textarea name="mafateeh" id="Yazan" rows="3" cols="26">
+        <form>
+            <input type="checkbox" id="html" name="Favourite_language">
+            <label for="html">html</label>
+            <br>
+            <input type="radio" id="css" name="Favourite_language">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" id="js" name="Favourite_language">
+            <label for="js"> JavaScript </label>
+            <br>
+            -----------------------------
+            <br>
+            <br>
+            <label for="Yazan"> review about mafateeh company </label>
+            <br>
+            <textarea name="mafateeh" id="Yazan" rows="3" cols="26">
         Mafateeh IT and Media Solutions is a professional digital solutions provider
     </textarea>
-        <br>
-        ------------------------------
-        <br>
-        <label for="Fname">First name:</label>
-        <br>
-        <input type="text" name="Fname" id="Fname" value="Yazan">
-        <br>
-        <label for="Lname">Last name:</label>
-        <br>
-        <input type="text" name="Lname" id="Lname" value="Zamil">
-        <br>
-        <br>
-        <input type="submit" value="Submit">
-        <br>
-        ------------------------------
-    </form>
-
-    </p>
+            <br>
+            <br>
+            ------------------------------
+            <br>
+            <br>
+            <label for="Fname">First name:</label>
+            <br>
+            <input type="text" name="Fname" id="Fname" value="Yazan">
+            <br>
+            <label for="Lname">Last name:</label>
+            <br>
+            <input type="text" name="Lname" id="Lname" value="Zamil">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+            ------------------------------
+        </form>
+    </div>
 
 </body>
 
