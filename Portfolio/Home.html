@@ -1,13 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <title>Yazan Portfolio</title>
 </head>
+
 <body>
-    <!-- Task 4 -->
-    <!-- Task 5 -->
-    
+    <div class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="/Portfolio/assets/YazanLogo.png" alt="Yazan Logo" class="logo-img">
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+        <ul class="nav-items">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#aboutUs">about</a>
+            </li>
+
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#Services">Services</a>
+
+            </li>
+
+            <li>
+                <a href="#contact">Contact us</a>
+
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="hero-section" id="home">
+        <a> <img src="/Portfolio/assets/yazan pic.jpg" alt=""> </a>
+
+        <h1>Hello, I'm <span class="span-yazan"> Yazan </span> </h1>
+        <h3> <span class="developer">Software Developer</span></h3>
+        <p class="Yazan">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Saepe, facilis assumenda molestias quod
+        </p>
+
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/yazanzamil/" class="btn">Hire Me</a>
+            <a href="https://github.com/YazanZamil?tab=repositories" class="btn">GitHub</a>
+        </div>
+
+    </div>
+
+    <div class="about-us" id="aboutUs">
+        <div class="about-container">
+            <div class="about-avatar">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Yazan Avatar">
+            </div>
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>
+                    I am a software developer with a passion for creating innovative solutions.
+                    My expertise lies in web development, mobile app development, and software engineering.
+                    I enjoy tackling complex challenges and delivering high-quality code.
+                </p>
+                <p>
+                    With a strong foundation in programming languages and frameworks, I am committed to continuous
+                    learning
+                    and staying up-to-date with industry trends.
+                    I thrive in collaborative environments and believe in the power of teamwork to achieve exceptional
+                    results.
+                </p>
+                <p>
+                    In my free time, I love exploring new technologies, contributing to open-source projects, and
+                    sharing
+                    knowledge with the developer community.
+                    Let's connect and build something amazing together!
+                </p>
+                <div class="contact-button">
+                    <a href="#contact" class="btn">ContactMe</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="Projects" id="Projects">
+        <h1>Projects</h1>
+        <div class="cards">
+
+
+            <div class="card">
+                <img src="https://www.homegrounds.co/wp-content/uploads/2022/07/Photo_LayeredSpanishLatte_SpanishLatteRecipe-1.jpg"
+                    alt="">
+                <div class="content">
+                    <h2>Yazan's Gym</h2>
+                    <p>Designed and developed a responsive gym website using HTML, CSS, and JavaScript
+                    </p>
+                    <a href="https://github.com/YazanZamil/gym-project">More Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.homegrounds.co/wp-content/uploads/2022/07/Photo_LayeredSpanishLatte_SpanishLatteRecipe-1.jpg"
+                    alt="">
+                <div class="content">
+                    <h2>Hamleys Toys</h2>
+                    <p>Built a cross-platform mobile app to manage toy purchases, user accounts, and personal goal
+                        tracking
+
+                    </p>
+                    <a href="https://github.com/YazanZamil/Hamleys-Toys">More Details</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.homegrounds.co/wp-content/uploads/2022/07/Photo_LayeredSpanishLatte_SpanishLatteRecipe-1.jpg"
+                    alt="">
+                <div class="content">
+                    <h2>E-Commerce Management System</h2>
+                    <p>
+                        Built a full-stack web application for managing an e-commerce system with customer accounts,
+                        product inventory, and
+                        shopping basket functionality
+                    </p>
+                    <a href="https://github.com/YazanZamil/E-Commerce-Management-System">More Details</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <!-- services Section -->
+    <div class="Contact">
+
+
+
+
+    </div>
+
+    <div class="container" id="contact">
+        <form class="contact-form">
+            <h1>contactUs</h1>
+
+            <div>
+                <label for="fname">First Name</label>
+                <input class="Left-Form" type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+
+            <div>
+
+            </div>
+            <label for="lname">Last Name</label>
+            <input class="Right-Form" type="text" id="lname" name="firstname" placeholder="Your last name..">
+            <div>
+                <label for="Emaill">Email</label>
+                <input class="Left-Form" type="text" id="Emaill" name="firstname" placeholder="ex@gmail.com..">
+            </div>
+            <div>
+                <label for="PhoneNum">PhoneNum</label>
+                <input class="Right-Form" type="text" id="PhoneNum" name="firstname" placeholder="079*******">
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.."
+                    style="height: 100px ;"></textarea>
+            </div>
+
+
+
+            <input class="submitButton" type="submit" value="Submit">
+
+        </form>
+    </div>
+
+
+
+
+
 </body>
+
 </html>

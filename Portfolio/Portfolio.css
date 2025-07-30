@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+.hamburger {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.nav-items {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background-color: #081b29;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    list-style: none;
+}
+
+.nav-items ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+  .nav-items li {
+      margin: 10px 0;
+        text-align: center;
+  }
+
+ .menu-toggle:checked+.hamburger+.nav-items {
+     display: flex;
+ }
+
+.nav-items a:hover {
+    color: rgb(202, 177, 36);
+    transition-duration: 0.5s;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.logo-img {
+    height: 50px;
+    width: 80px;
+    display: block;
+        
+}
+
+
+
+
+
+
+.span-yazan
+{
+    color: rgb(202, 177, 36);
+    font-weight: 900;
+    z-index: 500 ;
+}
+
+.hero-section  {
+        background-color: #081b29;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 128vh;
+    right: 10px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 6px;
+    color: white;
+    z-index: 400;
+}
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 0, 0);
+    opacity: 5%;
+}
+
+.hero-section img {
+    position: absolute;
+    top: 120px;
+    left: 615px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+
+ .developer {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(202, 177, 36);
+    z-index: 1000;
+}
+
+ .Yazan {
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 900;
+    margin-right: 390px;}
+
+  .hero-section p {
+width: 70%;
+    margin-left: 430px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(202, 177, 36);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+
+
+/* Projects Section */
+.Projects {
+        background-color: #081b29;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Projects h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.Projects :hover h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(202, 177, 36);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    height: 500px;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.content {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.content a {
+    background-color: rgb(23, 7, 96);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    z-index: 1000;
+    width: 70%;
+    text-align: center;
+    
+}
+
+.content a:hover {
+    background-color: rgb(142, 126, 38);
+    color: black;
+    transition-duration: 0.5s;
+}
+
+/* End of Projects Section */
+
+/* AboutUs Section */
+
+.about-container {
+        background-color: #081b29;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.about-avatar img {
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 100px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(202, 177, 36);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+
+/* End of AboutUs Section */
+
+/* contactUs */
+
+.container h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+    
+}
+
+
+.container {
+    display: grid;
+    border-radius: 5px;
+    background-color: rgb(62, 64, 174);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.contact-form 
+{
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.submitButton {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #45a049;
+}
